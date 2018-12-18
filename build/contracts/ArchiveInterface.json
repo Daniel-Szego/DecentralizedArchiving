@@ -1,0 +1,410 @@
+{
+  "contractName": "ArchiveInterface",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "time",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "hash",
+          "type": "string"
+        }
+      ],
+      "name": "ArchiveAdded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "oldAddress",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "newAddress",
+          "type": "address"
+        }
+      ],
+      "name": "ArchiveLogicChanged",
+      "type": "event"
+    }
+  ],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3006080604052600080fd00a165627a7a7230582003149aade6bc8c6c739bc4b3e679cfa72d68ae89fab0d97a66f350904897f2d20029",
+  "deployedBytecode": "0x6080604052600080fd00a165627a7a7230582003149aade6bc8c6c739bc4b3e679cfa72d68ae89fab0d97a66f350904897f2d20029",
+  "sourceMap": "75:208:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;75:208:2;;;;;;;",
+  "deployedSourceMap": "75:208:2:-;;;;;",
+  "source": "pragma solidity ^0.4.23;\n\n// simple contract to handle archive : Interface\ncontract ArchiveInterface {\n\n    // Events\n    // adding archive\n    event ArchiveAdded (uint time, string hash);\n\n    event ArchiveLogicChanged (address oldAddress, address newAddress);\n\n    // Functions\n\n\n}",
+  "sourcePath": "/home/super/Eth/DecentralizedArchiving/contracts/ArchiveInterface.sol",
+  "ast": {
+    "absolutePath": "/home/super/Eth/DecentralizedArchiving/contracts/ArchiveInterface.sol",
+    "exportedSymbols": {
+      "ArchiveInterface": [
+        95
+      ]
+    },
+    "id": 96,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 82,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 95,
+        "linearizedBaseContracts": [
+          95
+        ],
+        "name": "ArchiveInterface",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 88,
+            "name": "ArchiveAdded",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 87,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 84,
+                  "indexed": false,
+                  "name": "time",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 88,
+                  "src": "164:9:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 83,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "164:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 86,
+                  "indexed": false,
+                  "name": "hash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 88,
+                  "src": "175:11:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 85,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "175:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "163:24:2"
+            },
+            "src": "144:44:2"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 94,
+            "name": "ArchiveLogicChanged",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 93,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 90,
+                  "indexed": false,
+                  "name": "oldAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 94,
+                  "src": "221:18:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 89,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "221:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 92,
+                  "indexed": false,
+                  "name": "newAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 94,
+                  "src": "241:18:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 91,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "241:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "220:40:2"
+            },
+            "src": "194:67:2"
+          }
+        ],
+        "scope": 96,
+        "src": "75:208:2"
+      }
+    ],
+    "src": "0:283:2"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/super/Eth/DecentralizedArchiving/contracts/ArchiveInterface.sol",
+    "exportedSymbols": {
+      "ArchiveInterface": [
+        95
+      ]
+    },
+    "id": 96,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 82,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 95,
+        "linearizedBaseContracts": [
+          95
+        ],
+        "name": "ArchiveInterface",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 88,
+            "name": "ArchiveAdded",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 87,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 84,
+                  "indexed": false,
+                  "name": "time",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 88,
+                  "src": "164:9:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 83,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "164:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 86,
+                  "indexed": false,
+                  "name": "hash",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 88,
+                  "src": "175:11:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 85,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "175:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "163:24:2"
+            },
+            "src": "144:44:2"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 94,
+            "name": "ArchiveLogicChanged",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 93,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 90,
+                  "indexed": false,
+                  "name": "oldAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 94,
+                  "src": "221:18:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 89,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "221:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 92,
+                  "indexed": false,
+                  "name": "newAddress",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 94,
+                  "src": "241:18:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 91,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "241:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "220:40:2"
+            },
+            "src": "194:67:2"
+          }
+        ],
+        "scope": 96,
+        "src": "75:208:2"
+      }
+    ],
+    "src": "0:283:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-12-18T19:05:46.288Z"
+}
